@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>My Portfolio</title>
+    <style>
+        .sai{
+            position: relative;
+            background-color:lemonchiffon;
+        }
+
+        .eswar{
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        .social_media_icon{
+            width: 35px;
+            margin-left: 25px;
+        }
+        #anu{
+            background-color: rgb(168, 247, 131);
+        }
+        #ritu{
+            background-color:thistle;
+        }
+        #harshi{
+            color: rgb(182, 26, 174);
+        }
+        #nazriya{
+            color: brown;
+        }
+        #janu{
+            color: white;
+        }
+        #priya{
+            background-color:lemonchiffon;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" id="ritu">
+        <a class="navbar-brand ml-2" id="harshi" href="#"><b>Chidambareswar</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto" id="janu" >
+                <li class="nav-item ">
+                    <a class="nav-link text-white" href="#"><b>Home</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#"><b>About</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#"><b>Works</b></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main id="priya" role="main">
+
+        <section class="jumbotron text-center sai " style="height: 100vh;">
+            <div class="container eswar">
+                <h1 class="jumbotron-heading" id="nazriya">Hello,I'm E.V.S Chidambareswar</h1>
+                <p class="lead text-info"><b>I'm a FUll Stack Web Developer</b></p>
+                <p>
+                    <a href="#" class="btn btn-outline-primary my-2">View my work</a>
+                    <a href="#" class="btn btn-outline-secondary my-2">Contact Me</a>
+                </p>
+            </div>
+        </section>
+        <div class=" py-5 bg-info">
+            <div class="container">
+                <div class="text-center m-5"><h3 style="color: white;">My Projects</h3></div>
+                <div class="row" id="nani">
+                   
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-muted">
+        <div class="container-fluid bg-dark">
+            <div class="row mx-2">
+                <div class="col-sm-8 col-md-7 py-4 ">
+                    <h4 class="text-warning">About</h4>
+                    <p class="text-white">Hello! I'm E.V.S Chidambareswar, a Full Stack Web Developer and UI/UX enthusiast
+                        from India. I love building awesome and
+                        beautiful websites.</p>
+                </div>
+                <div class="col-sm-4 offset-md-1 py-4">
+                    <h4 class="text-white">Contact Me On Social Media</h4>
+                    <a href="https://www.instagram.com/chidambareswar23" target="_blank"><img src="unnamed (2).webp" class="social_media_icon "></a>
+                    <a href="https://api.whatsapp.com/send?phone=8919268771" target="_blank"><img src="unnamed.webp" class="social_media_icon"></a>
+                    <a href="https://twitter.com/chidambareswarV" target="_blank"><img src="unnamed (3).webp" class="social_media_icon"></a>
+                    <a href="https://www.facebook.com" target="_blank"><img src="unnamed (1).webp" class="social_media_icon"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+const obj = {
+    "portfolio" : [
+        {"img":"simuleduco.png","alt":"Card image cap","text":"Project name & Complete description about your project, mentions technologies used","btn":"Visit","time":"1 month"},
+        {"img":"onlinetechlabs.png","alt":"Card image cap","text":"Project name & Complete description about your project, mentions technologies used","btn":"Visit","time":"1 month"},
+        {"img":"virtuallabs.png","alt":"Card image cap","text":"Project name & Complete description about your project, mentions technologies used","btn":"Visit","time":"1 month"}
+    ]
+}
+
+var x = document.getElementById("nani")
+for(var i=0; i<obj.portfolio.length; i++){
+    x.innerHTML = x.innerHTML + '<div class="col-md-4"><div class="card mb-4 box-shadow"><img class="card-img-top"src=' + obj.portfolio[0].img + ' alt= ' + obj.portfolio[0].alt + '><div class="card-body" id="anu" ><p class="card-text">' + obj.portfolio[0].text + '</p><div class="d-flex justify-content-between align-items-center"><div class="btn-group"><button type="button" class="btn btn-sm btn-outline-secondary">' + obj.portfolio[0].btn + '</button></div><small class="text-muted">' + obj.portfolio[0].time + '</small></div></div></div></div></div></div>'
+}
+
+</script>
+</html>

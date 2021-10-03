@@ -1,0 +1,42 @@
+body{
+    text-align: center;
+    background-color: lemonchiffon;
+} 
+.main{
+    background-image: url("employee-experience-featured-image.png"), url("1200x583_-Blog-May-13th_2-2.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 15px center, left 13px center;
+    background-size: 500px, 500px;
+}
+h1{
+    color: rgb(182, 26, 174);
+    background-color: thistle;
+}
+.name{
+    font-size: 19px;
+}
+.box1{
+    padding: 5px;
+    border-radius: 6px;
+    border-color: rgb(49, 228, 33);
+}
+.box2{
+    padding: 5px;
+    border-radius: 6px;
+    border-color: violet;
+}
+.box3{
+    border-radius: 6px;
+    border-color: coral;
+}
+input.box4:hover{
+    color:white;
+    background-color: rgb(28, 196, 28);
+}
+h3{
+    color:brown;
+    
+}
+.social_media_icon{
+    width: 75px;
+}
